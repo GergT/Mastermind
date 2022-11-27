@@ -4,7 +4,7 @@ from kivy.uix.widget import Widget
 class MainWidget(Widget):
     pass
 
-class TheLabApp(App):
+class TheBoardApp(App):
     pass
 
-TheLabApp().run()
+TheBoardApp().run()
