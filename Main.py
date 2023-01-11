@@ -80,7 +80,6 @@ class Mastermind:
   #the process of running the game
   def play(self):
     while not self.game_over:
-      print(self.code)
       guess = input("Enter your guess (4 colours from r, g, b, y, o, p): ")
       self.get_feedback(guess)
       self.colour_convert(guess)
