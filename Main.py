@@ -60,7 +60,6 @@ class Mastermind:
 
   #Converts the letters (representing colours) into colour emojis
   def colour_convert(self,guess):
-    display_guess = ""
     for x in range (4):
       if guess[x].upper()== "R":
         pygame.draw.rect(DISPLAYSURF,RED,(25+(100*x),(25+self.turns*100),CWIDTH,CHEIGHT))
