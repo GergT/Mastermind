@@ -20,7 +20,6 @@ CHEIGHT = 50
 BWIDTH = 20
 BHEIGHT = 20
 
-#The raw mastermind program
 class Mastermind:
   def __init__(self):
     self.colours = ['R', 'G', 'B', 'Y',"O","P"]
@@ -33,7 +32,7 @@ class Mastermind:
     guess = input("Enter your guess (4 colours from r, g, b, y, o, p): ")
     return guess
 
-  #creates the code that you have to guess
+  #creates the randomised code
   def generate_code(self):
     loco = ""
     for p in range (4): 
@@ -58,7 +57,7 @@ class Mastermind:
       feedback = feedback + tempfeed[x]
     return feedback
 
-  #Converts the letters (representing colours) into colour emojis
+  #Converts the letters into pegs on the pygame window.
   def colour_convert(self,guess):
     for x in range (4):
       if guess[x].upper()== "R":
