@@ -90,7 +90,7 @@ class Mastermind:
         global loop
         loop = True     
       elif self.turns == 6:
-        print("You lost! You did not crack the code within 10 attempts")
+        print("You lost! You did not crack the code within 6 attempts")
         self.game_over = True
         loop = True
       else:
